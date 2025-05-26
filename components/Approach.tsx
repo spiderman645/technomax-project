@@ -13,11 +13,10 @@ const Approach = () => {
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planning & Strategy"
+          title="Personalized Learning Starts Here"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des="We start by understanding the unique learning styles, needs, and goals of our students. This phase focuses on designing an engaging, accessible, and fun approach to teaching coding—tailored to children with diverse abilities.
+"
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -26,11 +25,11 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Safe, Empowering, Ready-to-Go"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="Here we bring the vision to life—crafting inclusive, visual-first coding lessons with plenty of interactive elements. We use colors, sounds, and gamified challenges, updating you along the way to ensure every learner stays engaged.
+
+"
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -48,11 +47,11 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
+          title="Interactive & Inclusive by Design"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="From concept to classroom, our tools are built with engagement in mind.
+Gamified lessons, visual-first coding, sounds, and animations make learning feel like play.
+We ensure learners stay excited, supported, and ready to grow—every click of the way."
         >
           <CanvasRevealEffect
             animationSpeed={3}
