@@ -22,7 +22,7 @@ const RecentProjects = dynamic(() => import("@/components/RecentProjects"), {
   loading: () => <div className="min-h-[50vh] animate-pulse bg-gray-800" />
 });
 
-const FloatingNav = dynamic(() => import("@/components/ui/FloatingNavbar").then(mod => mod.FloatingNav), {
+const FloatingNav = dynamic(() => import("@/components/ui/FloatingNavbar"), {
   ssr: false,
   loading: () => <div className="h-16 w-full animate-pulse bg-gray-800" />
 });
