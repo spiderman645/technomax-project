@@ -5,7 +5,14 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true, // Temporarily ignore ESLint errors during build
   },
-  // Add any other Next.js config options here
+  output: 'standalone', // Optimize for Netlify deployment
+  images: {
+    unoptimized: true, // Required for Netlify static deployment
+  },
+  // Disable server-side features that might cause issues
+  experimental: {
+    serverActions: false,
+  }
 };
 
 export default withSentryConfig(

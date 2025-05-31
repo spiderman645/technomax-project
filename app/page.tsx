@@ -1,17 +1,38 @@
-"use client";
-
 import { navItems } from "@/data";
+import dynamic from "next/dynamic";
 
-import Hero from "@/components/Hero";
+// Import server components directly
 import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
-import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
-import Experience from "@/components/Experience";
-import RecentProjects from "@/components/RecentProjects";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
-const Home = () => {
+// Dynamically import client components
+const Hero = dynamic(() => import("@/components/Hero"), {
+  ssr: false,
+  loading: () => <div className="min-h-screen animate-pulse bg-gray-800" />
+});
+
+const Clients = dynamic(() => import("@/components/Clients"), {
+  ssr: false,
+  loading: () => <div className="min-h-[50vh] animate-pulse bg-gray-800" />
+});
+
+const Experience = dynamic(() => import("@/components/Experience"), {
+  ssr: false,
+  loading: () => <div className="min-h-[50vh] animate-pulse bg-gray-800" />
+});
+
+const RecentProjects = dynamic(() => import("@/components/RecentProjects"), {
+  ssr: false,
+  loading: () => <div className="min-h-[50vh] animate-pulse bg-gray-800" />
+});
+
+const FloatingNav = dynamic(() => import("@/components/ui/FloatingNavbar").then(mod => mod.FloatingNav), {
+  ssr: false,
+  loading: () => <div className="h-16 w-full animate-pulse bg-gray-800" />
+});
+
+export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
@@ -19,13 +40,10 @@ const Home = () => {
         <Hero />
         <Grid />
         <RecentProjects />
-        
         <Experience />
         <Approach />
         <Footer />
       </div>
     </main>
   );
-};
-
-export default Home;
+}
