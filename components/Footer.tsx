@@ -1,3 +1,5 @@
+"use client";
+
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
@@ -18,7 +20,7 @@ const Footer = () => {
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
         Ready to unlock your child's coding superpowers?
-        Let’s  can thrive through tech. <span className="text-purple"></span> build a future where every child, regardless of ability,
+        Let's  can thrive through tech. <span className="text-purple"></span> build a future where every child, regardless of ability,
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
         Book a free call and see how our program transforms learning into joy.

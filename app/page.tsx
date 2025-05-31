@@ -2,8 +2,6 @@ import { navItems } from "@/data";
 import dynamic from "next/dynamic";
 
 // Import server components directly
-import Grid from "@/components/Grid";
-import Footer from "@/components/Footer";
 import Approach from "@/components/Approach";
 
 // Dynamically import client components
@@ -30,6 +28,16 @@ const RecentProjects = dynamic(() => import("@/components/RecentProjects"), {
 const FloatingNav = dynamic(() => import("@/components/ui/FloatingNavbar").then(mod => mod.FloatingNav), {
   ssr: false,
   loading: () => <div className="h-16 w-full animate-pulse bg-gray-800" />
+});
+
+const Grid = dynamic(() => import("@/components/Grid"), {
+  ssr: false,
+  loading: () => <div className="min-h-[50vh] animate-pulse bg-gray-800" />
+});
+
+const Footer = dynamic(() => import("@/components/Footer"), {
+  ssr: false,
+  loading: () => <div className="min-h-[30vh] animate-pulse bg-gray-800" />
 });
 
 export default function Home() {
