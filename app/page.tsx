@@ -1,9 +1,6 @@
 import { navItems } from "@/data";
 import dynamic from "next/dynamic";
 
-// Import server components directly
-import Approach from "@/components/Approach";
-
 // Dynamically import client components
 const Hero = dynamic(() => import("@/components/Hero"), {
   ssr: false,
@@ -38,6 +35,11 @@ const Grid = dynamic(() => import("@/components/Grid"), {
 const Footer = dynamic(() => import("@/components/Footer"), {
   ssr: false,
   loading: () => <div className="min-h-[30vh] animate-pulse bg-gray-800" />
+});
+
+const Approach = dynamic(() => import("@/components/Approach"), {
+  ssr: false,
+  loading: () => <div className="min-h-[50vh] animate-pulse bg-gray-800" />
 });
 
 export default function Home() {
