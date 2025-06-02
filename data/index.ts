@@ -83,10 +83,18 @@ export const projects = [
   {
     id: 2,
     title: "Hands That speak",
-    des: "A hands-on approach to learning, designed for children with autism spectrum disorder.",
+    des: "A hands-on approach to learning, designed for blind children",
     img: "/p2.svg",
     iconLists: [],
-    link: "https://seciallearn.netlify.app/",
+    link: "https://speciallearn2.netlify.app/",
+  },
+   {
+    id: 3,
+    title: "sign learn",
+    des: "A hands-on approach to learning, designed for deaf children",
+    img: "/p5.svg",
+    iconLists: [],
+    link: "https://speciallearn3.netlify.app/",
   },
   
   
