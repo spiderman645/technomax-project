@@ -76,17 +76,17 @@ export const projects = [
   des: "A gentle and joyful introduction to learning, made especially for unique and brilliant young minds.",
   img: "/p1.svg",
   iconLists: [],
-  link: "https://lecture-page.vercel.app/"
+  link: "https://speciallearnn.netlify.app/"
 
 
   },
   {
     id: 2,
-    title: "SmartDoc Reader ",
-    des: "AI-powered tool to read, understand, and summarize PDFs effortlessly",
+    title: "Hands That speak",
+    des: "A hands-on approach to learning, designed for children with autism spectrum disorder.",
     img: "/p2.svg",
     iconLists: [],
-    link: "https://pdf-reader-fawn.vercel.app/pdf-studio",
+    link: "https://seciallearn.netlify.app/",
   },
   
   
